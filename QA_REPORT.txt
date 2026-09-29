@@ -1,0 +1,30 @@
+THE LOST ATELIER — CINEMATIC PREMIUM V5 | QUALITY CHECK REPORT
+
+CHECKS RUN IN THIS SESSION
+1. JavaScript: node --check game.js PASS.
+2. Manifest/icons: manifest.webmanifest JSON parsed; 192x192 and 512x512 PNG sizes confirmed PASS.
+3. SVG: 6 world backgrounds + illustrated character + Luma parse as valid XML PASS.
+4. Service worker: required 14 game assets appear in cache precache list and exist in root PASS.
+5. Real browser interactions in mobile-sized Chromium: Level 1–9 played by simulated taps/clicks across 8 game engines (restore, rune sequence, hidden symbols, memory echo, pairs, lock, constellation and perfume mix); Level 10 full 4-stage boss interaction PASS.
+6. Level 1–60 bookkeeping / unlock state: FORCED-COMPLETION TEST HOOK ONLY for Levels 11–60. PASS. This does NOT mean each of those levels was manually solved.
+7. All achievements/relics simulation: final 54 relics and 180 stars produced after forced completions PASS.
+8. Screen widths 320, 360, 390, 430, 768 px: no horizontal overflow; opening a level, pause/resume, fragment taps, reward, world map PASS.
+9. Pause timer did not advance during 400 ms pause smoke check PASS.
+10. V4 -> V5 saves: simulated V4 saved state carrying Level 13 unlock, currency and relics correctly upgraded PASS. Cross-domain save transfer NOT supported.
+11. Shop/Settings: coin deduction + settings toggling PASS.
+12. Chromium runtime test: no uncaught JavaScript exceptions in engine interaction test PASS.
+
+RELEASE GATES NOT YET TESTED
+- Full manual Level 1–60 solve/playthrough on a real phone.
+- Physical Android APK install and updated APK coexistence with Little Chef.
+- PWABuilder remote audit, content-type responses on live GitHub Pages, Android package/signing verification, offline reopening on an actual device.
+- Performance/battery/accessibility and audio behavior on multiple real Android versions.
+- Google Play policy compliance / privacy declarations / store listing.
+
+ANDROID IDENTITY WARNING
+The Android package ID is NOT auto-set by web manifest. Set manually inside PWABuilder Android Options:
+com.thelostatelier.mysterygame
+Do not reuse Little Chef package ID or signing key. Preserve Lost Atelier's new signing key for all future updates and increment versionCode. If Android offers UPDATE LITTLE CHEF, CANCEL before proceeding.
+
+TERMS
+Premium V5 is a playable browser/PWA testing source package, not a signed Android APK/AAB. It has not passed final commercial release validation.

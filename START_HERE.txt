@@ -1,0 +1,11 @@
+THE LOST ATELIER — CINEMATIC PREMIUM V5 / WEB GAME TEST BUILD
+
+1) UNZIP. Upload every file INSIDE this folder (not the ZIP itself) to a NEW GitHub repository ROOT. Keep world-1.svg to world-6.svg, character.svg, luma.svg, both icon PNGs, manifest.webmanifest, sw.js, styles.css, game.js, index.html together.
+2) Settings → Pages → deploy main / (root). Open the Pages URL; confirm the game and assets load. Direct URL /icon-192.png must show image.
+3) Test a real Android phone: intro → map → gameplay → rewards; retry, pause/resume, offline, save/reload, audio, world transitions. This is a browser game/PWA source ZIP, NOT a signed APK/AAB.
+4) When making a separate APK with PWABuilder, enter package ID EXACTLY: com.thelostatelier.mysterygame in Android Options. This is NOT encoded by manifest.json. DO NOT use the package ID or signing key from Little Chef.
+5) The first successfully installed Lost Atelier APK must be signed with its own key. BACK UP the Lost Atelier signing.keystore and private info. For future updates KEEP the package ID and key and INCREMENT Android version code. No APK from this ZIP is pre-signed.
+6) Existing browser progress migrates only on the same website origin; switching to new GitHub Pages URL changes storage origin.
+7) PWABuilder may need re-scan after site finishes deploying. Inspect URL /manifest.webmanifest, /icon-192.png, /character.svg before packaging.
+8) This V5 build has automated browser QA, but physical Android APK installation, Google Play review, and a human playthrough of all 60 levels are NOT yet verified.
+9) Share screenshots/video of problems. Do not publish or buy Play Console assets until app is validated on Android.

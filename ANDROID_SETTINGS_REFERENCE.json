@@ -1,0 +1,8 @@
+{
+  "android_package_id_MUST_SET_MANUALLY_in_PWABuilder": "com.thelostatelier.mysterygame",
+  "app_name": "The Lost Atelier",
+  "initial_android_version_code": 1,
+  "signing": "Create a NEW unique keystore for Lost Atelier. Never use Little Chef keystore. Save credentials privately.",
+  "future_updates": "Keep Android package ID and original Lost Atelier signing key; increment Android version code. Do not reuse a different game signing key.",
+  "important": "This reference file does NOT automatically set package ID on PWABuilder. Confirm in Android Options before generating APK/AAB."
+}

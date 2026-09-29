@@ -1,0 +1,31 @@
+{
+  "name": "The Lost Atelier — Cinematic Edition",
+  "short_name": "Lost Atelier",
+  "description": "A cinematic fantasy puzzle mystery through sixty memories and six illustrated worlds. Offline play and collectible relics.",
+  "id": "./the-lost-atelier",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#081221",
+  "theme_color": "#0b1d30",
+  "orientation": "portrait-primary",
+  "categories": [
+    "games",
+    "entertainment",
+    "puzzle"
+  ],
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
